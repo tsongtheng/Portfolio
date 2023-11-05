@@ -695,13 +695,14 @@ section {
 /* MESSAGE SENT STYLE */
 
 .message-sent-class {
-  width: 300px;
+  width: 280px;
   text-align: center;
-  padding: 1rem;
+  padding: .8rem;
   margin-top: 3rem;
   background-color: var(--color-light-green);
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   display: none;
+s
 }
 
 .main-title {
@@ -1005,5 +1006,3 @@ section {
     font-size: 4rem;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
