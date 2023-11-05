@@ -8,6 +8,7 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #27ae60;
+  --color-light-green: #66cdaa;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -232,7 +233,6 @@ section {
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .about-container .right-about .about-item:hover {
-  cursor: default;
   transform: translateY(-5px);
   border: 1px solid var(--color-secondary);
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
@@ -692,47 +692,17 @@ section {
   transition: all 0.4s ease-out;
 }
 
-/* .main-btn {
-  border-radius: 30px;
-  color: inherit;
-  font-weight: 600;
-  position: relative;
-  border: 1px solid var(--color-secondary);
-  display: flex;
-  align-self: flex-start;
-  align-items: center;
-  overflow: hidden;
-}
-.main-btn .btn-text {
-  padding: 0 2rem;
-}
-.main-btn .btn-icon {
-  background-color: var(--color-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+/* MESSAGE SENT STYLE */
+
+.message-sent-class {
+  width: 300px;
+  text-align: center;
   padding: 1rem;
+  margin-top: 3rem;
+  background-color: var(--color-light-green);
+  border-radius: 0.4rem;
+  display: none;
 }
-.main-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(100%);
-  transition: all 0.4s ease-out;
-  z-index: -1;
-}
-.main-btn:hover {
-  transition: all 0.4s ease-out;
-}
-.main-btn:hover::before {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-secondary);
-  transform: translateX(0);
-  transition: all 0.4s ease-out;
-} */
 
 .main-title {
   text-align: center;
@@ -1001,6 +971,13 @@ section {
     padding-top: 3rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .message-sent-class {
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .container {
     padding: 7rem 3rem;
