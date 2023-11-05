@@ -402,7 +402,13 @@
               </div>
             </div>
             <div class="right-contact">
-              <form action="" id="form" class="contact-form">
+              <form
+                action=""
+                id="form"
+                class="contact-form"
+                onsubmit="return validateForm()"
+                novalidate
+              >
                 <div class="input-control i-c-2">
                   <input
                     type="text"
@@ -410,6 +416,7 @@
                     required
                     placeholder="YOUR NAME"
                     autocomplete="off"
+                    class="invalid"
                   />
                   <input
                     type="email"
@@ -417,6 +424,7 @@
                     required
                     placeholder="YOUR EMAIL"
                     autocomplete="off"
+                    class="invalid"
                   />
                 </div>
                 <div class="input-control">
@@ -426,6 +434,7 @@
                     required
                     placeholder="ENTER SUBJECT"
                     autocomplete="off"
+                    class="invalid"
                   />
                 </div>
                 <div class="input-control">
@@ -436,6 +445,7 @@
                     rows="8"
                     placeholder="Message Here..."
                     autocomplete="off"
+                    class="invalid"
                   ></textarea>
                 </div>
                 <div class="submit-btn">
