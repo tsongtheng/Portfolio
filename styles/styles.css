@@ -9,6 +9,7 @@
   --color-primary: #191d2b;
   --color-secondary: #27ae60;
   --color-light-green: #66cdaa;
+  --color-error: #cd6666;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -693,16 +694,25 @@ section {
 }
 
 /* MESSAGE SENT STYLE */
-
 .message-sent-class {
   width: 280px;
   text-align: center;
-  padding: .8rem;
+  padding: 0.8rem;
   margin-top: 3rem;
   background-color: var(--color-light-green);
   border-radius: 0.5rem;
   display: none;
-s
+}
+
+/* MESSAGE NOT SENT STYLE */
+.message-not-sent-class {
+  width: 280px;
+  text-align: center;
+  padding: 0.8rem;
+  margin-top: 3rem;
+  border: 0.1rem solid var(--color-error);
+  border-radius: 0.5rem;
+  display: none;
 }
 
 .main-title {
