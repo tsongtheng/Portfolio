@@ -1,3 +1,3 @@
-# PORTFOLIO
+## PORTFOLIO
 
-Portfolio website created using HTML, CSS and Javascript.
+portfolio: https://tipchan.netlify.app/
